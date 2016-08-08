@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Sample Image Slideshow</title>
+	<link rel="stylesheet" href="style.css" type="text/css" >
+</head>
+
+<body>	
+	<div class="container">
+		<div id="wrap">
+			<div class="content" id="image1" onmouseover="stop()" onmouseout="play()"></div>
+			<div class="content" id="image2" onmouseover="stop()" onmouseout="play()"></div>
+			<div class="content" id="image3" onmouseover="stop()" onmouseout="play()"></div>
+			<div class="content" id="image4" onmouseover="stop()" onmouseout="play()"></div>
+		</div>
+	</div>	
+
+		<a class="btn-floating" onclick="plusDivs(-1)"> &#10094 </a>
+		 <a class="btn-floating" id="right-btn" onclick="plusDivs(+1)">&#10095 </a> 
+
+	<div id="navlinks">
+		<span class="itemlinks" onclick="indicator(1)"></span>
+		<span class="itemlinks" onclick="indicator(2)"></span>
+		<span class="itemlinks" onclick="indicator(3)"></span>
+		<span class="itemlinks" onclick="indicator(4)"></span>
+	</div>	
+	<script src="script.js"></script>
+	
+</body>	
+	
+</html>
